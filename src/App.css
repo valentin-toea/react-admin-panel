@@ -1,0 +1,97 @@
+.App {
+  min-height: 100vh;
+  background: #e1e2e1;
+}
+
+.app-bar {
+  width: 100%;
+  background: #37464f;
+  box-shadow: 0px 5px 4px rgb(0 0 0 / 40%);
+  border-radius: 1px 1px 15px 15px;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+  position: sticky;
+}
+
+.buttons {
+  margin: 1.5em;
+}
+
+.header-button {
+  cursor: pointer;
+  background: white;
+  color: rgb(55, 70, 79);
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  height: 2.5rem;
+  margin-left: 0.5em;
+}
+
+.header-button:hover {
+  background: rgba(225, 226, 225, 0.8);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 105px;
+}
+
+.right-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colors {
+  margin-top: 0.83em;
+  display: flex;
+  flex-direction: column;
+}
+
+.color-picker-body {
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.color-picker {
+  height: 35px;
+  width: 35px;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-picker-input {
+  height: 30px;
+  width: 30px;
+  clip-path: circle(30%);
+}
+
+h2 {
+  font-weight: 500;
+}
