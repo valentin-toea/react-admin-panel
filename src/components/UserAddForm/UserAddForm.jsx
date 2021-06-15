@@ -32,10 +32,16 @@ class UserAddForm extends React.Component {
         className="form"
         onSubmit={(event) => {
           event.preventDefault();
-          //if( this.state.name.length > 0 ) {
-          this.onSubmitForm(this.state);
-          this.setState({ ...emptyState });
-          // }
+          if (
+            this.state.name.length > 0 &&
+            this.state.email.includes("@") &&
+            this.state.email.includes(".")
+          ) {
+            this.onSubmitForm(this.state);
+            this.setState({ ...emptyState });
+          } else {
+            alert("Empty names or incorrect emails are not accepted!");
+          }
         }}
       >
         <label htmlFor="name">
